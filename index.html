@@ -12,38 +12,24 @@
 
 <body>
 
-    <h1>Temperature Converter</h1>
-
     <div class="card">
-        <div id="container">
 
-            <table class="table">
+        <h1 class="heading">Temperature Converter</h1>
 
-                <tbody>
-
-                    <tr>
-                        <!-- <td scope="row"></td> -->
-                        <td> <label for="cel">Celsius</label></td>
-                        <td> <input type="Number" id="cel" class="input" placeholder="Celsius"></td>
-                    </tr>
-
-                    <tr>
-                        <!-- <td scope="row"></td> -->
-                        <td> <label for="fah">Fahrenheit</label></td>
-                        <td> <input type="Number" id="fah" class="input" placeholder="Fahrenheit"></td>
-                    </tr>
-
-                    <tr>
-                        <!-- <td scope="row"></td> -->
-                        <td> <label for="kel">Kelvin</label></td>
-                        <td> <input type="Number" id="kel" class="input" placeholder=Kelvin></td>
-                    </tr>
-
-                </tbody>
-            </table>
-
+        <div class="temp-container">
+            <label for="cel">Celsius</label>
+            <input onchange="computeTemp(event)" type="Number" id="cel" class="input" placeholder="Celsius">
         </div>
 
+        <div class="temp-container">
+            <label for="fah">Fahrenheit</label>
+            <input onchange="computeTemp(event)" type="Number" id="fah" class="input" placeholder="Fahrenheit">
+        </div>
+
+        <div class="temp-container">
+            <label for="kel">Kelvin</label></td>
+            <input onchange="computeTemp(event)" type="Number" id="kel" class="input" placeholder=Kelvin>
+        </div>
 
     </div>
 

@@ -5,76 +5,56 @@
 }
 
 body {
-  background-color: rgb(38, 255, 212);
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(
+    to right bottom,
+    rgb(18, 230, 250),
+    rgb(38, 255, 212),
+    rgb(0, 171, 171),
+    rgb(23, 161, 99)
+  );
+  font-family: monospace;
 }
 
-h1 {
-  text-decoration: underline;
-  text-align: center;
-  color: rgb(15, 42, 23);
-  margin: 35px;
+.heading {
+  font-size: 32px;
 }
 
 .card {
   /* Add shadows to create the "card" effect */
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to right bottom, orange, white, green);
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0px 4px 10px 8px rgba(0, 0, 0, 0.8);
   transition: 0.3s;
-  background-color: aliceblue;
-  border-radius: 20px; /* 5px rounded corners */
-  width: fit-content;
-  margin: auto;
-  padding: 100px;
+  width: 85%;
+  max-width: 450px;
+  min-width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* On mouse-over, add a deeper shadow */
 .card:hover {
-  box-shadow: 0 8px 16px 0 rgba(33, 64, 106, 0.2);
+  box-shadow: 0px 4px 10px 8px rgb(0, 171, 171);
+}
+
+.temp-container {
+  width: 100%;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .input {
-  text-align: center;
+  font-family: monospace;
+  width: 220px;
+  float: right;
+  padding: 5px;
+  outline: none;
+  font-size: 18px;
 }
-.table {
-  font-size: xx-large;
-  border: 5px black;
-}
-/* Add some padding inside the card container */
-/* .container {
-  padding: 2px 16px;
-} */
-
-/*
-
-
-
-
-#container {
-  color: rgb(15, 42, 23);
-  text-align: left;
-  font-size: x-large;
-
-  margin: 150px;
-  padding: 30px;
-}
-
-.input_div {
-  border: 5px red;
-}
-
-#cel {
-  text-align: center;
-}
-#fah {
-  text-align: center;
-}
-#kel {
-  text-align: center;
-}
-
-label {
-  color: red;
-  border: 3% blue;
-  margin: 5%;
-}
-*/
